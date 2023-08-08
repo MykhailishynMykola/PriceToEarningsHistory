@@ -111,6 +111,16 @@ public enum FinnhubClient {
             completion(FinnhubClient.parseResponse(result: result))
         }
     }
+    
+    // MARK: Basic Financials
+    
+    public static func basicFinancials(symbol: String, completion: @escaping (Result<BasicFinancials, FinnhubWebError>) -> Void) {
+        let url = SafeURL.path("\(Constants.BASE_URL)/stock/metric?symbol=\(symbol)&metric=all")
+        let resource = Resource<BasicFinancials>(get: url, headers: headers())
+        URLSession.shared.load(resource) { (result: Result<BasicFinancials?, Error>) in
+            completion(FinnhubClient.parseResponse(result: result))
+        }
+    }
 
     // MARK: Company Profile 2
 

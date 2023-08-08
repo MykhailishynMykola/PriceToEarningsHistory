@@ -10,13 +10,48 @@
 		0507A97E4B576707028D6A8B /* Pods_PriceToEarningsHistory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AADB26A863BC3A65E2189EA /* Pods_PriceToEarningsHistory.framework */; };
 		74F49C402A8284FB00072AFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C3F2A8284FB00072AFD /* AppDelegate.swift */; };
 		74F49C422A8284FB00072AFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C412A8284FB00072AFD /* SceneDelegate.swift */; };
-		74F49C442A8284FB00072AFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C432A8284FB00072AFD /* ViewController.swift */; };
+		74F49C442A8284FB00072AFD /* SymbolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C432A8284FB00072AFD /* SymbolsViewController.swift */; };
 		74F49C472A8284FB00072AFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F49C452A8284FB00072AFD /* Main.storyboard */; };
 		74F49C492A8284FD00072AFD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74F49C482A8284FD00072AFD /* Assets.xcassets */; };
 		74F49C4C2A8284FD00072AFD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74F49C4A2A8284FD00072AFD /* LaunchScreen.storyboard */; };
 		74F49C572A8284FD00072AFD /* PriceToEarningsHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C562A8284FD00072AFD /* PriceToEarningsHistoryTests.swift */; };
 		74F49C612A8284FD00072AFD /* PriceToEarningsHistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C602A8284FD00072AFD /* PriceToEarningsHistoryUITests.swift */; };
 		74F49C632A8284FD00072AFD /* PriceToEarningsHistoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C622A8284FD00072AFD /* PriceToEarningsHistoryUITestsLaunchTests.swift */; };
+		74F49C732A828DB600072AFD /* Finnhub-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74F49C722A828DB600072AFD /* Finnhub-Info.plist */; };
+		74F49CC02A828F7200072AFD /* FinnhubClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C9E2A828F7100072AFD /* FinnhubClient.swift */; };
+		74F49CC12A828F7200072AFD /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CA02A828F7200072AFD /* Trade.swift */; };
+		74F49CC22A828F7200072AFD /* LiveNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CA12A828F7200072AFD /* LiveNews.swift */; };
+		74F49CC32A828F7200072AFD /* CompanySymbolQueryResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CA22A828F7200072AFD /* CompanySymbolQueryResult.swift */; };
+		74F49CC42A828F7200072AFD /* NewsCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CA32A828F7200072AFD /* NewsCategory.swift */; };
+		74F49CC52A828F7200072AFD /* CryptoSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CA42A828F7200072AFD /* CryptoSymbol.swift */; };
+		74F49CC62A828F7200072AFD /* LiveResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CA52A828F7200072AFD /* LiveResponse.swift */; };
+		74F49CC72A828F7200072AFD /* CryptoExchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CA62A828F7200072AFD /* CryptoExchange.swift */; };
+		74F49CC82A828F7200072AFD /* MarketNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CA72A828F7200072AFD /* MarketNews.swift */; };
+		74F49CC92A828F7200072AFD /* FDACalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CA82A828F7200072AFD /* FDACalendarEvent.swift */; };
+		74F49CCA2A828F7200072AFD /* CompanyProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CA92A828F7200072AFD /* CompanyProfile.swift */; };
+		74F49CCB2A828F7200072AFD /* PriceTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CAA2A828F7200072AFD /* PriceTarget.swift */; };
+		74F49CCC2A828F7200072AFD /* Split.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CAB2A828F7200072AFD /* Split.swift */; };
+		74F49CCD2A828F7200072AFD /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CAC2A828F7200072AFD /* Quote.swift */; };
+		74F49CCE2A828F7200072AFD /* CompanySymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CAD2A828F7200072AFD /* CompanySymbol.swift */; };
+		74F49CCF2A828F7200072AFD /* LiveTrades.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CAE2A828F7200072AFD /* LiveTrades.swift */; };
+		74F49CD02A828F7200072AFD /* CovidCaseCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CAF2A828F7200072AFD /* CovidCaseCount.swift */; };
+		74F49CD12A828F7200072AFD /* AggregateIndicators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CB02A828F7200072AFD /* AggregateIndicators.swift */; };
+		74F49CD22A828F7200072AFD /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CB12A828F7200072AFD /* Country.swift */; };
+		74F49CD32A828F7200072AFD /* NewsSentiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CB22A828F7200072AFD /* NewsSentiment.swift */; };
+		74F49CD42A828F7200072AFD /* Recommendation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CB32A828F7200072AFD /* Recommendation.swift */; };
+		74F49CD52A828F7200072AFD /* EconomicCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CB42A828F7200072AFD /* EconomicCalendar.swift */; };
+		74F49CD62A828F7200072AFD /* Resolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CB52A828F7200072AFD /* Resolution.swift */; };
+		74F49CD72A828F7200072AFD /* LivePing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CB62A828F7200072AFD /* LivePing.swift */; };
+		74F49CD82A828F7200072AFD /* Exchange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CB72A828F7200072AFD /* Exchange.swift */; };
+		74F49CD92A828F7200072AFD /* SafeUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CB92A828F7200072AFD /* SafeUrl.swift */; };
+		74F49CDA2A828F7200072AFD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CBA2A828F7200072AFD /* Constants.swift */; };
+		74F49CDB2A828F7200072AFD /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CBC2A828F7200072AFD /* Mappable.swift */; };
+		74F49CDC2A828F7200072AFD /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CBD2A828F7200072AFD /* SocketService.swift */; };
+		74F49CDD2A828F7200072AFD /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CBE2A828F7200072AFD /* WebService.swift */; };
+		74F49CDE2A828F7200072AFD /* FinnhubLiveClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CBF2A828F7200072AFD /* FinnhubLiveClient.swift */; };
+		74F49CE02A82936B00072AFD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CDF2A82936B00072AFD /* DataManager.swift */; };
+		74F49CE22A8299CB00072AFD /* SymbolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CE12A8299CB00072AFD /* SymbolCell.swift */; };
+		74F49CE42A82A77700072AFD /* BasicFinancials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CE32A82A77700072AFD /* BasicFinancials.swift */; };
 		AEA9460D9E38638260EF4832 /* Pods_PriceToEarningsHistoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620C155A0BD235F01FE1F180 /* Pods_PriceToEarningsHistoryTests.framework */; };
 		F62BE6C0A5F21A3B84B46EFB /* Pods_PriceToEarningsHistory_PriceToEarningsHistoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340729EEB00F826ECD025AEA /* Pods_PriceToEarningsHistory_PriceToEarningsHistoryUITests.framework */; };
 /* End PBXBuildFile section */
@@ -47,7 +82,7 @@
 		74F49C3C2A8284FB00072AFD /* PriceToEarningsHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceToEarningsHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F49C3F2A8284FB00072AFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F49C412A8284FB00072AFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74F49C432A8284FB00072AFD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74F49C432A8284FB00072AFD /* SymbolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolsViewController.swift; sourceTree = "<group>"; };
 		74F49C462A8284FB00072AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74F49C482A8284FD00072AFD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74F49C4B2A8284FD00072AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +92,41 @@
 		74F49C5C2A8284FD00072AFD /* PriceToEarningsHistoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriceToEarningsHistoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F49C602A8284FD00072AFD /* PriceToEarningsHistoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceToEarningsHistoryUITests.swift; sourceTree = "<group>"; };
 		74F49C622A8284FD00072AFD /* PriceToEarningsHistoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceToEarningsHistoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		74F49C722A828DB600072AFD /* Finnhub-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Finnhub-Info.plist"; sourceTree = "<group>"; };
+		74F49C9E2A828F7100072AFD /* FinnhubClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinnhubClient.swift; sourceTree = "<group>"; };
+		74F49CA02A828F7200072AFD /* Trade.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
+		74F49CA12A828F7200072AFD /* LiveNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveNews.swift; sourceTree = "<group>"; };
+		74F49CA22A828F7200072AFD /* CompanySymbolQueryResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanySymbolQueryResult.swift; sourceTree = "<group>"; };
+		74F49CA32A828F7200072AFD /* NewsCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCategory.swift; sourceTree = "<group>"; };
+		74F49CA42A828F7200072AFD /* CryptoSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoSymbol.swift; sourceTree = "<group>"; };
+		74F49CA52A828F7200072AFD /* LiveResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveResponse.swift; sourceTree = "<group>"; };
+		74F49CA62A828F7200072AFD /* CryptoExchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoExchange.swift; sourceTree = "<group>"; };
+		74F49CA72A828F7200072AFD /* MarketNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarketNews.swift; sourceTree = "<group>"; };
+		74F49CA82A828F7200072AFD /* FDACalendarEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FDACalendarEvent.swift; sourceTree = "<group>"; };
+		74F49CA92A828F7200072AFD /* CompanyProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyProfile.swift; sourceTree = "<group>"; };
+		74F49CAA2A828F7200072AFD /* PriceTarget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceTarget.swift; sourceTree = "<group>"; };
+		74F49CAB2A828F7200072AFD /* Split.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Split.swift; sourceTree = "<group>"; };
+		74F49CAC2A828F7200072AFD /* Quote.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		74F49CAD2A828F7200072AFD /* CompanySymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanySymbol.swift; sourceTree = "<group>"; };
+		74F49CAE2A828F7200072AFD /* LiveTrades.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTrades.swift; sourceTree = "<group>"; };
+		74F49CAF2A828F7200072AFD /* CovidCaseCount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CovidCaseCount.swift; sourceTree = "<group>"; };
+		74F49CB02A828F7200072AFD /* AggregateIndicators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AggregateIndicators.swift; sourceTree = "<group>"; };
+		74F49CB12A828F7200072AFD /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		74F49CB22A828F7200072AFD /* NewsSentiment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsSentiment.swift; sourceTree = "<group>"; };
+		74F49CB32A828F7200072AFD /* Recommendation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recommendation.swift; sourceTree = "<group>"; };
+		74F49CB42A828F7200072AFD /* EconomicCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EconomicCalendar.swift; sourceTree = "<group>"; };
+		74F49CB52A828F7200072AFD /* Resolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolution.swift; sourceTree = "<group>"; };
+		74F49CB62A828F7200072AFD /* LivePing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivePing.swift; sourceTree = "<group>"; };
+		74F49CB72A828F7200072AFD /* Exchange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exchange.swift; sourceTree = "<group>"; };
+		74F49CB92A828F7200072AFD /* SafeUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeUrl.swift; sourceTree = "<group>"; };
+		74F49CBA2A828F7200072AFD /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		74F49CBC2A828F7200072AFD /* Mappable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mappable.swift; sourceTree = "<group>"; };
+		74F49CBD2A828F7200072AFD /* SocketService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		74F49CBE2A828F7200072AFD /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		74F49CBF2A828F7200072AFD /* FinnhubLiveClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinnhubLiveClient.swift; sourceTree = "<group>"; };
+		74F49CDF2A82936B00072AFD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		74F49CE12A8299CB00072AFD /* SymbolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCell.swift; sourceTree = "<group>"; };
+		74F49CE32A82A77700072AFD /* BasicFinancials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFinancials.swift; sourceTree = "<group>"; };
 		799FBEB8745CF93F600A5218 /* Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.release.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8AADB26A863BC3A65E2189EA /* Pods_PriceToEarningsHistory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceToEarningsHistory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB995CCAA200D42DD76DAD99 /* Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -128,11 +198,15 @@
 			children = (
 				74F49C3F2A8284FB00072AFD /* AppDelegate.swift */,
 				74F49C412A8284FB00072AFD /* SceneDelegate.swift */,
-				74F49C432A8284FB00072AFD /* ViewController.swift */,
+				74F49C432A8284FB00072AFD /* SymbolsViewController.swift */,
+				74F49CDF2A82936B00072AFD /* DataManager.swift */,
+				74F49CE12A8299CB00072AFD /* SymbolCell.swift */,
 				74F49C452A8284FB00072AFD /* Main.storyboard */,
 				74F49C482A8284FD00072AFD /* Assets.xcassets */,
 				74F49C4A2A8284FD00072AFD /* LaunchScreen.storyboard */,
 				74F49C4D2A8284FD00072AFD /* Info.plist */,
+				74F49C722A828DB600072AFD /* Finnhub-Info.plist */,
+				74F49C742A828EBF00072AFD /* Frameworks */,
 			);
 			path = PriceToEarningsHistory;
 			sourceTree = "<group>";
@@ -154,6 +228,77 @@
 			path = PriceToEarningsHistoryUITests;
 			sourceTree = "<group>";
 		};
+		74F49C742A828EBF00072AFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74F49C9D2A828F6300072AFD /* FinnhubSwift */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		74F49C9D2A828F6300072AFD /* FinnhubSwift */ = {
+			isa = PBXGroup;
+			children = (
+				74F49CBA2A828F7200072AFD /* Constants.swift */,
+				74F49C9E2A828F7100072AFD /* FinnhubClient.swift */,
+				74F49CBF2A828F7200072AFD /* FinnhubLiveClient.swift */,
+				74F49CB82A828F7200072AFD /* Helpers */,
+				74F49C9F2A828F7200072AFD /* Models */,
+				74F49CBB2A828F7200072AFD /* Protocols */,
+				74F49CBD2A828F7200072AFD /* SocketService.swift */,
+				74F49CBE2A828F7200072AFD /* WebService.swift */,
+			);
+			path = FinnhubSwift;
+			sourceTree = "<group>";
+		};
+		74F49C9F2A828F7200072AFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				74F49CA02A828F7200072AFD /* Trade.swift */,
+				74F49CA12A828F7200072AFD /* LiveNews.swift */,
+				74F49CA22A828F7200072AFD /* CompanySymbolQueryResult.swift */,
+				74F49CA32A828F7200072AFD /* NewsCategory.swift */,
+				74F49CA42A828F7200072AFD /* CryptoSymbol.swift */,
+				74F49CA52A828F7200072AFD /* LiveResponse.swift */,
+				74F49CA62A828F7200072AFD /* CryptoExchange.swift */,
+				74F49CA72A828F7200072AFD /* MarketNews.swift */,
+				74F49CA82A828F7200072AFD /* FDACalendarEvent.swift */,
+				74F49CA92A828F7200072AFD /* CompanyProfile.swift */,
+				74F49CAA2A828F7200072AFD /* PriceTarget.swift */,
+				74F49CAB2A828F7200072AFD /* Split.swift */,
+				74F49CAC2A828F7200072AFD /* Quote.swift */,
+				74F49CAD2A828F7200072AFD /* CompanySymbol.swift */,
+				74F49CE32A82A77700072AFD /* BasicFinancials.swift */,
+				74F49CAE2A828F7200072AFD /* LiveTrades.swift */,
+				74F49CAF2A828F7200072AFD /* CovidCaseCount.swift */,
+				74F49CB02A828F7200072AFD /* AggregateIndicators.swift */,
+				74F49CB12A828F7200072AFD /* Country.swift */,
+				74F49CB22A828F7200072AFD /* NewsSentiment.swift */,
+				74F49CB32A828F7200072AFD /* Recommendation.swift */,
+				74F49CB42A828F7200072AFD /* EconomicCalendar.swift */,
+				74F49CB52A828F7200072AFD /* Resolution.swift */,
+				74F49CB62A828F7200072AFD /* LivePing.swift */,
+				74F49CB72A828F7200072AFD /* Exchange.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		74F49CB82A828F7200072AFD /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				74F49CB92A828F7200072AFD /* SafeUrl.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		74F49CBB2A828F7200072AFD /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				74F49CBC2A828F7200072AFD /* Mappable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		D436A4F9F9CAF3FE3B5CFECE /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +309,6 @@
 				D891F7F8CEA3CE925BFD5259 /* Pods-PriceToEarningsHistoryTests.debug.xcconfig */,
 				5634EE6D723C34376E70A431 /* Pods-PriceToEarningsHistoryTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -275,6 +419,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F49C732A828DB600072AFD /* Finnhub-Info.plist in Resources */,
 				74F49C4C2A8284FD00072AFD /* LaunchScreen.storyboard in Resources */,
 				74F49C492A8284FD00072AFD /* Assets.xcassets in Resources */,
 				74F49C472A8284FB00072AFD /* Main.storyboard in Resources */,
@@ -371,9 +516,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74F49C442A8284FB00072AFD /* ViewController.swift in Sources */,
+				74F49CDD2A828F7200072AFD /* WebService.swift in Sources */,
+				74F49CC62A828F7200072AFD /* LiveResponse.swift in Sources */,
+				74F49CCA2A828F7200072AFD /* CompanyProfile.swift in Sources */,
+				74F49CCC2A828F7200072AFD /* Split.swift in Sources */,
+				74F49CC42A828F7200072AFD /* NewsCategory.swift in Sources */,
+				74F49CC12A828F7200072AFD /* Trade.swift in Sources */,
+				74F49CDB2A828F7200072AFD /* Mappable.swift in Sources */,
+				74F49CDA2A828F7200072AFD /* Constants.swift in Sources */,
+				74F49CD02A828F7200072AFD /* CovidCaseCount.swift in Sources */,
+				74F49CDC2A828F7200072AFD /* SocketService.swift in Sources */,
+				74F49C442A8284FB00072AFD /* SymbolsViewController.swift in Sources */,
+				74F49CC92A828F7200072AFD /* FDACalendarEvent.swift in Sources */,
+				74F49CC52A828F7200072AFD /* CryptoSymbol.swift in Sources */,
+				74F49CE22A8299CB00072AFD /* SymbolCell.swift in Sources */,
 				74F49C402A8284FB00072AFD /* AppDelegate.swift in Sources */,
+				74F49CD72A828F7200072AFD /* LivePing.swift in Sources */,
+				74F49CD12A828F7200072AFD /* AggregateIndicators.swift in Sources */,
 				74F49C422A8284FB00072AFD /* SceneDelegate.swift in Sources */,
+				74F49CD42A828F7200072AFD /* Recommendation.swift in Sources */,
+				74F49CC22A828F7200072AFD /* LiveNews.swift in Sources */,
+				74F49CCD2A828F7200072AFD /* Quote.swift in Sources */,
+				74F49CD62A828F7200072AFD /* Resolution.swift in Sources */,
+				74F49CC82A828F7200072AFD /* MarketNews.swift in Sources */,
+				74F49CE42A82A77700072AFD /* BasicFinancials.swift in Sources */,
+				74F49CCB2A828F7200072AFD /* PriceTarget.swift in Sources */,
+				74F49CC32A828F7200072AFD /* CompanySymbolQueryResult.swift in Sources */,
+				74F49CD82A828F7200072AFD /* Exchange.swift in Sources */,
+				74F49CD92A828F7200072AFD /* SafeUrl.swift in Sources */,
+				74F49CD52A828F7200072AFD /* EconomicCalendar.swift in Sources */,
+				74F49CCE2A828F7200072AFD /* CompanySymbol.swift in Sources */,
+				74F49CD22A828F7200072AFD /* Country.swift in Sources */,
+				74F49CC72A828F7200072AFD /* CryptoExchange.swift in Sources */,
+				74F49CC02A828F7200072AFD /* FinnhubClient.swift in Sources */,
+				74F49CE02A82936B00072AFD /* DataManager.swift in Sources */,
+				74F49CCF2A828F7200072AFD /* LiveTrades.swift in Sources */,
+				74F49CD32A828F7200072AFD /* NewsSentiment.swift in Sources */,
+				74F49CDE2A828F7200072AFD /* FinnhubLiveClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
