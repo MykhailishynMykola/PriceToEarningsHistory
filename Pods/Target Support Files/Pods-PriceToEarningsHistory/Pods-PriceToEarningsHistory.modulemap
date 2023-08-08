@@ -1,0 +1,6 @@
+framework module Pods_PriceToEarningsHistory {
+  umbrella header "Pods-PriceToEarningsHistory-umbrella.h"
+
+  export *
+  module * { export * }
+}

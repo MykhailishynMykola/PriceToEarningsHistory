@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0507A97E4B576707028D6A8B /* Pods_PriceToEarningsHistory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AADB26A863BC3A65E2189EA /* Pods_PriceToEarningsHistory.framework */; };
 		74F49C402A8284FB00072AFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C3F2A8284FB00072AFD /* AppDelegate.swift */; };
 		74F49C422A8284FB00072AFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C412A8284FB00072AFD /* SceneDelegate.swift */; };
 		74F49C442A8284FB00072AFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C432A8284FB00072AFD /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 		74F49C572A8284FD00072AFD /* PriceToEarningsHistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C562A8284FD00072AFD /* PriceToEarningsHistoryTests.swift */; };
 		74F49C612A8284FD00072AFD /* PriceToEarningsHistoryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C602A8284FD00072AFD /* PriceToEarningsHistoryUITests.swift */; };
 		74F49C632A8284FD00072AFD /* PriceToEarningsHistoryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C622A8284FD00072AFD /* PriceToEarningsHistoryUITestsLaunchTests.swift */; };
+		AEA9460D9E38638260EF4832 /* Pods_PriceToEarningsHistoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620C155A0BD235F01FE1F180 /* Pods_PriceToEarningsHistoryTests.framework */; };
+		F62BE6C0A5F21A3B84B46EFB /* Pods_PriceToEarningsHistory_PriceToEarningsHistoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340729EEB00F826ECD025AEA /* Pods_PriceToEarningsHistory_PriceToEarningsHistoryUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B2414D651C512BC89257D60 /* Pods-PriceToEarningsHistory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistory.debug.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistory/Pods-PriceToEarningsHistory.debug.xcconfig"; sourceTree = "<group>"; };
+		340729EEB00F826ECD025AEA /* Pods_PriceToEarningsHistory_PriceToEarningsHistoryUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceToEarningsHistory_PriceToEarningsHistoryUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C96765790F2A88BE1C0D56 /* Pods-PriceToEarningsHistory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistory.release.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistory/Pods-PriceToEarningsHistory.release.xcconfig"; sourceTree = "<group>"; };
+		5634EE6D723C34376E70A431 /* Pods-PriceToEarningsHistoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistoryTests.release.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistoryTests/Pods-PriceToEarningsHistoryTests.release.xcconfig"; sourceTree = "<group>"; };
+		620C155A0BD235F01FE1F180 /* Pods_PriceToEarningsHistoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceToEarningsHistoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F49C3C2A8284FB00072AFD /* PriceToEarningsHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceToEarningsHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F49C3F2A8284FB00072AFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F49C412A8284FB00072AFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		74F49C5C2A8284FD00072AFD /* PriceToEarningsHistoryUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriceToEarningsHistoryUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F49C602A8284FD00072AFD /* PriceToEarningsHistoryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceToEarningsHistoryUITests.swift; sourceTree = "<group>"; };
 		74F49C622A8284FD00072AFD /* PriceToEarningsHistoryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceToEarningsHistoryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		799FBEB8745CF93F600A5218 /* Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.release.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8AADB26A863BC3A65E2189EA /* Pods_PriceToEarningsHistory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceToEarningsHistory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB995CCAA200D42DD76DAD99 /* Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D891F7F8CEA3CE925BFD5259 /* Pods-PriceToEarningsHistoryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistoryTests.debug.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistoryTests/Pods-PriceToEarningsHistoryTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0507A97E4B576707028D6A8B /* Pods_PriceToEarningsHistory.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA9460D9E38638260EF4832 /* Pods_PriceToEarningsHistoryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62BE6C0A5F21A3B84B46EFB /* Pods_PriceToEarningsHistory_PriceToEarningsHistoryUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142C2BDA2427F548A63F8BB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AADB26A863BC3A65E2189EA /* Pods_PriceToEarningsHistory.framework */,
+				340729EEB00F826ECD025AEA /* Pods_PriceToEarningsHistory_PriceToEarningsHistoryUITests.framework */,
+				620C155A0BD235F01FE1F180 /* Pods_PriceToEarningsHistoryTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74F49C332A8284FB00072AFD = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +108,8 @@
 				74F49C552A8284FD00072AFD /* PriceToEarningsHistoryTests */,
 				74F49C5F2A8284FD00072AFD /* PriceToEarningsHistoryUITests */,
 				74F49C3D2A8284FB00072AFD /* Products */,
+				D436A4F9F9CAF3FE3B5CFECE /* Pods */,
+				142C2BDA2427F548A63F8BB3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +154,20 @@
 			path = PriceToEarningsHistoryUITests;
 			sourceTree = "<group>";
 		};
+		D436A4F9F9CAF3FE3B5CFECE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B2414D651C512BC89257D60 /* Pods-PriceToEarningsHistory.debug.xcconfig */,
+				44C96765790F2A88BE1C0D56 /* Pods-PriceToEarningsHistory.release.xcconfig */,
+				BB995CCAA200D42DD76DAD99 /* Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.debug.xcconfig */,
+				799FBEB8745CF93F600A5218 /* Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.release.xcconfig */,
+				D891F7F8CEA3CE925BFD5259 /* Pods-PriceToEarningsHistoryTests.debug.xcconfig */,
+				5634EE6D723C34376E70A431 /* Pods-PriceToEarningsHistoryTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74F49C662A8284FD00072AFD /* Build configuration list for PBXNativeTarget "PriceToEarningsHistory" */;
 			buildPhases = (
+				6BB8E03B0F79C3DA9373F743 /* [CP] Check Pods Manifest.lock */,
 				74F49C382A8284FB00072AFD /* Sources */,
 				74F49C392A8284FB00072AFD /* Frameworks */,
 				74F49C3A2A8284FB00072AFD /* Resources */,
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74F49C692A8284FD00072AFD /* Build configuration list for PBXNativeTarget "PriceToEarningsHistoryTests" */;
 			buildPhases = (
+				0B20017F4BCAF2E29DD6FC9E /* [CP] Check Pods Manifest.lock */,
 				74F49C4E2A8284FD00072AFD /* Sources */,
 				74F49C4F2A8284FD00072AFD /* Frameworks */,
 				74F49C502A8284FD00072AFD /* Resources */,
@@ -169,6 +212,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74F49C6C2A8284FD00072AFD /* Build configuration list for PBXNativeTarget "PriceToEarningsHistoryUITests" */;
 			buildPhases = (
+				BB1EBD653D18A32EC3F1FA52 /* [CP] Check Pods Manifest.lock */,
 				74F49C582A8284FD00072AFD /* Sources */,
 				74F49C592A8284FD00072AFD /* Frameworks */,
 				74F49C5A2A8284FD00072AFD /* Resources */,
@@ -252,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B20017F4BCAF2E29DD6FC9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PriceToEarningsHistoryTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BB8E03B0F79C3DA9373F743 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PriceToEarningsHistory-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB1EBD653D18A32EC3F1FA52 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74F49C382A8284FB00072AFD /* Sources */ = {
@@ -432,6 +545,7 @@
 		};
 		74F49C672A8284FD00072AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B2414D651C512BC89257D60 /* Pods-PriceToEarningsHistory.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +574,7 @@
 		};
 		74F49C682A8284FD00072AFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44C96765790F2A88BE1C0D56 /* Pods-PriceToEarningsHistory.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +603,7 @@
 		};
 		74F49C6A2A8284FD00072AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D891F7F8CEA3CE925BFD5259 /* Pods-PriceToEarningsHistoryTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +624,7 @@
 		};
 		74F49C6B2A8284FD00072AFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5634EE6D723C34376E70A431 /* Pods-PriceToEarningsHistoryTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +645,7 @@
 		};
 		74F49C6D2A8284FD00072AFD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB995CCAA200D42DD76DAD99 /* Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +664,7 @@
 		};
 		74F49C6E2A8284FD00072AFD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 799FBEB8745CF93F600A5218 /* Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
