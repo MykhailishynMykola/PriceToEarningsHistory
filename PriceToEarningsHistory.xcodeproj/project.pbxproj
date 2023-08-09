@@ -52,6 +52,7 @@
 		74F49CE02A82936B00072AFD /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CDF2A82936B00072AFD /* DataManager.swift */; };
 		74F49CE22A8299CB00072AFD /* SymbolCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CE12A8299CB00072AFD /* SymbolCell.swift */; };
 		74F49CE42A82A77700072AFD /* BasicFinancials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49CE32A82A77700072AFD /* BasicFinancials.swift */; };
+		74F49CF62A83DB7C00072AFD /* whitelist.json in Resources */ = {isa = PBXBuildFile; fileRef = 74F49CF52A83DB7C00072AFD /* whitelist.json */; };
 		AEA9460D9E38638260EF4832 /* Pods_PriceToEarningsHistoryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 620C155A0BD235F01FE1F180 /* Pods_PriceToEarningsHistoryTests.framework */; };
 		F62BE6C0A5F21A3B84B46EFB /* Pods_PriceToEarningsHistory_PriceToEarningsHistoryUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 340729EEB00F826ECD025AEA /* Pods_PriceToEarningsHistory_PriceToEarningsHistoryUITests.framework */; };
 /* End PBXBuildFile section */
@@ -127,6 +128,7 @@
 		74F49CDF2A82936B00072AFD /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		74F49CE12A8299CB00072AFD /* SymbolCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolCell.swift; sourceTree = "<group>"; };
 		74F49CE32A82A77700072AFD /* BasicFinancials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFinancials.swift; sourceTree = "<group>"; };
+		74F49CF52A83DB7C00072AFD /* whitelist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = whitelist.json; sourceTree = "<group>"; };
 		799FBEB8745CF93F600A5218 /* Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.release.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8AADB26A863BC3A65E2189EA /* Pods_PriceToEarningsHistory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceToEarningsHistory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB995CCAA200D42DD76DAD99 /* Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.debug.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests/Pods-PriceToEarningsHistory-PriceToEarningsHistoryUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				74F49C432A8284FB00072AFD /* SymbolsViewController.swift */,
 				74F49CDF2A82936B00072AFD /* DataManager.swift */,
 				74F49CE12A8299CB00072AFD /* SymbolCell.swift */,
+				74F49CF52A83DB7C00072AFD /* whitelist.json */,
 				74F49C452A8284FB00072AFD /* Main.storyboard */,
 				74F49C482A8284FD00072AFD /* Assets.xcassets */,
 				74F49C4A2A8284FD00072AFD /* LaunchScreen.storyboard */,
@@ -423,6 +426,7 @@
 				74F49C4C2A8284FD00072AFD /* LaunchScreen.storyboard in Resources */,
 				74F49C492A8284FD00072AFD /* Assets.xcassets in Resources */,
 				74F49C472A8284FB00072AFD /* Main.storyboard in Resources */,
+				74F49CF62A83DB7C00072AFD /* whitelist.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
