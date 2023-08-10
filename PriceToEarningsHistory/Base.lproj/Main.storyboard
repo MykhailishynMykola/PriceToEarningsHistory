@@ -17,24 +17,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Symbols" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hC-DQ-9t7">
-                                <rect key="frame" x="174" y="76" width="66" height="21"/>
+                                <rect key="frame" x="20" y="76" width="66" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="66" id="DSo-pn-qaY"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7F4-Fu-dYb">
+                                <rect key="frame" x="106" y="71" width="113" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="zXE-9c-zXJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Load symbols"/>
+                                <connections>
+                                    <action selector="loadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gPo-2F-CKf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOe-xZ-tdl">
+                                <rect key="frame" x="239" y="71" width="116" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="hfw-xw-Nyj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Load numbers"/>
+                                <connections>
+                                    <action selector="loadNumbersButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KmD-xk-jFy"/>
+                                </connections>
+                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0X0-S9-91P">
                                 <rect key="frame" x="20" y="117" width="374" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SymbolCell" id="yio-fp-Qfd" customClass="SymbolCell" customModule="PriceToEarningsHistory" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="374" height="41.5"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="374" height="41"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="yio-fp-Qfd" id="2LR-yz-d3M">
-                                            <rect key="frame" x="0.0" y="0.0" width="374" height="41.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="41"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugh-cP-USQ">
-                                                    <rect key="frame" x="20" y="10" width="334" height="21.5"/>
+                                                    <rect key="frame" x="20" y="10" width="334" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -66,8 +91,13 @@
                             <constraint firstItem="0X0-S9-91P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6XA-HC-fxU"/>
                             <constraint firstItem="0X0-S9-91P" firstAttribute="top" secondItem="0hC-DQ-9t7" secondAttribute="bottom" constant="20" id="9JB-nd-rGN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0X0-S9-91P" secondAttribute="bottom" constant="20" id="R5v-cC-JIx"/>
-                            <constraint firstItem="0hC-DQ-9t7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RgX-wJ-r6G"/>
+                            <constraint firstItem="kOe-xZ-tdl" firstAttribute="centerY" secondItem="7F4-Fu-dYb" secondAttribute="centerY" id="ZSx-Vc-qbQ"/>
+                            <constraint firstItem="7F4-Fu-dYb" firstAttribute="leading" secondItem="0hC-DQ-9t7" secondAttribute="trailing" constant="20" id="fDC-FW-BuF"/>
+                            <constraint firstItem="7F4-Fu-dYb" firstAttribute="centerY" secondItem="0hC-DQ-9t7" secondAttribute="centerY" id="l18-cJ-iUL"/>
+                            <constraint firstItem="0hC-DQ-9t7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="nKw-YO-Tc5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0X0-S9-91P" secondAttribute="trailing" constant="20" id="ouG-lv-twT"/>
+                            <constraint firstItem="kOe-xZ-tdl" firstAttribute="leading" secondItem="7F4-Fu-dYb" secondAttribute="trailing" constant="20" id="pwO-69-ESH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kOe-xZ-tdl" secondAttribute="trailing" symbolic="YES" id="umu-J4-lDh"/>
                         </constraints>
                     </view>
                     <connections>
