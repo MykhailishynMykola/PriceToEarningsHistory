@@ -16,6 +16,7 @@ final class DataManager {
     static let shared = DataManager()
     private var symbolsCache: [CompanySymbol] = []
     private var basicFinancialsCache: [String: BasicFinancials] = [:]
+    private var pricesCache: [String: Quote] = [:]
     
     private var whitelist: [String] {
         guard let path = Bundle.main.path(forResource: "whitelist", ofType: "json"),
@@ -60,6 +61,29 @@ final class DataManager {
             return
         }
         let loaded = loadBasicFinancialsFromFile()
+        completion(loaded)
+        return
+    }
+    
+    func getPrices(symbol: String, completion: @escaping (Quote) -> ()) {
+        guard pricesCache[symbol] == nil else {
+            completion(pricesCache[symbol]!)
+            return
+        }
+        let loaded = loadPricesFromFile(for: symbol)
+        guard loaded == nil else {
+            completion(loaded!)
+            return
+        }
+        updatePrices(for: symbol, completion: completion)
+    }
+    
+    func getCachedPrices(completion: @escaping ([String: Quote]) -> ()) {
+        guard pricesCache.isEmpty else {
+            completion(pricesCache)
+            return
+        }
+        let loaded = loadPricesFromFile()
         completion(loaded)
         return
     }
@@ -179,6 +203,73 @@ private extension DataManager {
                 if let jsonData = try String(contentsOfFile: url.path).data(using: .utf8) {
                     let bf = try JSONDecoder().decode(BasicFinancials.self, from: jsonData)
                     let symbol = String(fileName.dropLast("_bf.json".count))
+                    result[symbol] = bf
+                }
+            }
+            return result
+        } catch {
+            print(error)
+        }
+        return [:]
+    }
+    
+    func updatePrices(for symbol: String, completion: @escaping (Quote) -> ()) {
+        let jsonEncoder = JSONEncoder()
+        
+        FinnhubClient.quote(symbol: symbol) { result in
+            switch result {
+            case let .success(quote):
+                let jsonData = try! jsonEncoder.encode(quote)
+                let jsonString = String(data: jsonData, encoding: .utf8)!
+                
+                let pathWithFilename = Self.documentDirectory.appendingPathComponent("\(symbol)_pr.json")
+                do {
+                    try jsonString.write(to: pathWithFilename,
+                                         atomically: true,
+                                         encoding: .utf8)
+                } catch {
+                    print(error)
+                }
+                
+                self.pricesCache[symbol] = quote
+                completion(quote)
+            case .failure(.invalidData):
+                print("Invalid data")
+            case let .failure(.networkFailure(error)):
+                print(error)
+            }
+        }
+    }
+    
+    func loadPricesFromFile(for symbol: String) -> Quote? {
+        do {
+            let fileNames = try FileManager.default.contentsOfDirectory(atPath: Self.documentDirectory.path)
+            if fileNames.contains("\(symbol)_pr") {
+                let url = Self.documentDirectory.appendingPathComponent("\(symbol)_pr")
+                if let jsonData = try String(contentsOfFile: url.path).data(using: .utf8) {
+                    let quote = try JSONDecoder().decode(Quote.self, from: jsonData)
+                    pricesCache[symbol] = quote
+                    return quote
+                }
+            }
+        } catch {
+            print(error)
+        }
+        return nil
+    }
+    
+    func loadPricesFromFile() -> [String: Quote] {
+        do {
+            var result: [String: Quote] = [:]
+            let fileNames = try FileManager.default.contentsOfDirectory(atPath: Self.documentDirectory.path)
+            for fileName in fileNames {
+                guard fileName.contains("_pr.json") else {
+                    continue
+                }
+                let url = Self.documentDirectory.appendingPathComponent(fileName)
+                if let jsonData = try String(contentsOfFile: url.path).data(using: .utf8) {
+                    let bf = try JSONDecoder().decode(Quote.self, from: jsonData)
+                    let symbol = String(fileName.dropLast("_pr.json".count))
                     result[symbol] = bf
                 }
             }
