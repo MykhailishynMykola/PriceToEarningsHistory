@@ -77,6 +77,23 @@ final class SymbolsViewController: UIViewController {
             self.startTimer(with: #selector(self.basicFinancialsTimerFired))
         }
     }
+    
+    @IBAction private func uploadSymbolsButtonPressed(_ sender: Any) {
+        DataManager.shared.fs_uploadSymbols()
+    }
+    
+    @IBAction private func uploadPricesButtonPressed(_ sender: Any) {
+        DataManager.shared.fs_uploadPrices()
+    }
+    
+    @IBAction private func uploadBasicButtonPressed(_ sender: Any) {
+        DataManager.shared.fs_uploadBasicFinancials()
+    }
+    
+    @IBAction private func downloadButtonPressed(_ sender: Any) {
+        DataManager.shared.fs_download()
+    }
+    
 }
 
 private extension SymbolsViewController {

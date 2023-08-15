@@ -16,30 +16,84 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7F4-Fu-dYb">
-                                <rect key="frame" x="20" y="66" width="113" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="zXE-9c-zXJ"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Symbols"/>
-                                <connections>
-                                    <action selector="symbolsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PDK-Ic-onB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9G-Vm-GNf">
-                                <rect key="frame" x="153" y="66" width="99" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="txC-fW-u0s"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Prices"/>
-                                <connections>
-                                    <action selector="pricesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJh-gp-bJx"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="X0a-iV-Hoy">
+                                <rect key="frame" x="20" y="66" width="336" height="93"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="l1r-0M-NSB">
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7F4-Fu-dYb">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Symbols"/>
+                                                <connections>
+                                                    <action selector="symbolsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PDK-Ic-onB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9G-Vm-GNf">
+                                                <rect key="frame" x="79.5" y="0.0" width="64" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Prices"/>
+                                                <connections>
+                                                    <action selector="pricesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BJh-gp-bJx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOe-xZ-tdl">
+                                                <rect key="frame" x="143.5" y="0.0" width="44.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="P/E"/>
+                                                <connections>
+                                                    <action selector="peButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZm-iR-cYB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Tmo-yM-oG7">
+                                        <rect key="frame" x="0.0" y="31" width="336" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WpJ-XJ-n86">
+                                                <rect key="frame" x="0.0" y="0.0" width="127.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Upload symbols"/>
+                                                <connections>
+                                                    <action selector="uploadSymbolsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fMC-f1-onx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCc-Rs-apx">
+                                                <rect key="frame" x="127.5" y="0.0" width="114" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Upload Prices"/>
+                                                <connections>
+                                                    <action selector="uploadPricesButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bYa-rL-H9a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YbJ-1S-RYw">
+                                                <rect key="frame" x="241.5" y="0.0" width="94.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Upload p/e"/>
+                                                <connections>
+                                                    <action selector="uploadBasicButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPB-14-hEc"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C01-5d-muX">
+                                        <rect key="frame" x="0.0" y="62" width="120.5" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dc7-bO-RaU">
+                                                <rect key="frame" x="0.0" y="0.0" width="120.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Download data"/>
+                                                <connections>
+                                                    <action selector="downloadButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Yr-OE-Xmd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="0X0-S9-91P">
-                                <rect key="frame" x="20" y="117" width="374" height="725"/>
+                                <rect key="frame" x="20" y="179" width="374" height="663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SymbolCell" id="yio-fp-Qfd" customClass="SymbolCell" customModule="PriceToEarningsHistory" customModuleProvider="target">
@@ -74,32 +128,16 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="T1T-wm-a3c"/>
                                 </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOe-xZ-tdl">
-                                <rect key="frame" x="272" y="66" width="116" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="116" id="hfw-xw-Nyj"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="P/E"/>
-                                <connections>
-                                    <action selector="peButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZm-iR-cYB"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="7F4-Fu-dYb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="27d-1t-qQU"/>
                             <constraint firstItem="0X0-S9-91P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6XA-HC-fxU"/>
-                            <constraint firstItem="m9G-Vm-GNf" firstAttribute="leading" secondItem="7F4-Fu-dYb" secondAttribute="trailing" constant="20" id="Kgm-V2-2cE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0X0-S9-91P" secondAttribute="bottom" constant="20" id="R5v-cC-JIx"/>
-                            <constraint firstItem="kOe-xZ-tdl" firstAttribute="centerY" secondItem="7F4-Fu-dYb" secondAttribute="centerY" id="ZSx-Vc-qbQ"/>
-                            <constraint firstItem="m9G-Vm-GNf" firstAttribute="centerY" secondItem="7F4-Fu-dYb" secondAttribute="centerY" id="gWT-Jz-fii"/>
-                            <constraint firstItem="0X0-S9-91P" firstAttribute="top" secondItem="7F4-Fu-dYb" secondAttribute="bottom" constant="20" id="la3-mF-oGT"/>
-                            <constraint firstItem="7F4-Fu-dYb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="omm-tO-Aa7"/>
+                            <constraint firstItem="X0a-iV-Hoy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="22" id="WNO-nz-hpo"/>
+                            <constraint firstItem="0X0-S9-91P" firstAttribute="top" secondItem="X0a-iV-Hoy" secondAttribute="bottom" constant="20" id="cNn-Ec-k80"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0X0-S9-91P" secondAttribute="trailing" constant="20" id="ouG-lv-twT"/>
-                            <constraint firstItem="kOe-xZ-tdl" firstAttribute="leading" secondItem="m9G-Vm-GNf" secondAttribute="trailing" constant="20" id="rb4-KQ-gEp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="kOe-xZ-tdl" secondAttribute="trailing" symbolic="YES" id="umu-J4-lDh"/>
+                            <constraint firstItem="X0a-iV-Hoy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="s2y-M6-nyL"/>
                         </constraints>
                     </view>
                     <connections>
