@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0507A97E4B576707028D6A8B /* Pods_PriceToEarningsHistory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AADB26A863BC3A65E2189EA /* Pods_PriceToEarningsHistory.framework */; };
+		749E12DC2A8BACC700032D8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 749E12DB2A8BACC700032D8E /* GoogleService-Info.plist */; };
 		74F49C402A8284FB00072AFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C3F2A8284FB00072AFD /* AppDelegate.swift */; };
 		74F49C422A8284FB00072AFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C412A8284FB00072AFD /* SceneDelegate.swift */; };
 		74F49C442A8284FB00072AFD /* SymbolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F49C432A8284FB00072AFD /* SymbolsViewController.swift */; };
@@ -80,6 +81,7 @@
 		44C96765790F2A88BE1C0D56 /* Pods-PriceToEarningsHistory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistory.release.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistory/Pods-PriceToEarningsHistory.release.xcconfig"; sourceTree = "<group>"; };
 		5634EE6D723C34376E70A431 /* Pods-PriceToEarningsHistoryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PriceToEarningsHistoryTests.release.xcconfig"; path = "Target Support Files/Pods-PriceToEarningsHistoryTests/Pods-PriceToEarningsHistoryTests.release.xcconfig"; sourceTree = "<group>"; };
 		620C155A0BD235F01FE1F180 /* Pods_PriceToEarningsHistoryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PriceToEarningsHistoryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		749E12DB2A8BACC700032D8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		74F49C3C2A8284FB00072AFD /* PriceToEarningsHistory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceToEarningsHistory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F49C3F2A8284FB00072AFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74F49C412A8284FB00072AFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				74F49C4A2A8284FD00072AFD /* LaunchScreen.storyboard */,
 				74F49C4D2A8284FD00072AFD /* Info.plist */,
 				74F49C722A828DB600072AFD /* Finnhub-Info.plist */,
+				749E12DB2A8BACC700032D8E /* GoogleService-Info.plist */,
 				74F49C742A828EBF00072AFD /* Frameworks */,
 			);
 			path = PriceToEarningsHistory;
@@ -427,6 +430,7 @@
 				74F49C492A8284FD00072AFD /* Assets.xcassets in Resources */,
 				74F49C472A8284FB00072AFD /* Main.storyboard in Resources */,
 				74F49CF62A83DB7C00072AFD /* whitelist.json in Resources */,
+				749E12DC2A8BACC700032D8E /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
